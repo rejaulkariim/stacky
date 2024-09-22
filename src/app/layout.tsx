@@ -1,9 +1,13 @@
+import Navbar from "@/components/shared/Navbar";
 import { ThemeProvider } from "@/components/themes/ThemeProvider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const BaiJamjuree = Bai_Jamjuree({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Stacky Protfolio",
@@ -17,15 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {" "}
+      <body className={BaiJamjuree.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Navbar />
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
