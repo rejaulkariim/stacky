@@ -1,27 +1,11 @@
+import { navItems } from "@/constants";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ModeToggle } from "../themes/ModeToggle";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Navbar = () => {
-  const navItems = [
-    { id: "1", name: "About", route: "/aboaut" },
-    {
-      id: "2",
-      name: "Project",
-      route: "/project",
-    },
-    {
-      id: "3",
-      name: "Testimonails",
-      route: "/testimonails",
-    },
-    {
-      id: "4",
-      name: "Project",
-      route: "/project",
-    },
-  ];
   return (
     <header className="hidden w-full bg-background border-b border-border/60 h-16 md:flex justify-center items-center sticky z-50 top-0 inset-x-0">
       <MaxWidthWrapper>
@@ -41,7 +25,11 @@ const Navbar = () => {
               <Link
                 href={item.route}
                 key={item.id}
-                className="uppercase text-muted-foreground hover:text-foreground duration-300"
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  })
+                )}
               >
                 {item.name}
               </Link>
