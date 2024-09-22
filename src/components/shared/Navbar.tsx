@@ -23,7 +23,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="w-full bg-background border-b border-border/60 h-16 flex justify-center items-center sticky z-50 top-0 inset-x-0">
+    <header className="hidden w-full bg-background border-b border-border/60 h-16 md:flex justify-center items-center sticky z-50 top-0 inset-x-0">
       <MaxWidthWrapper>
         <nav className="flex justify-between items-center">
           {/* Logo */}

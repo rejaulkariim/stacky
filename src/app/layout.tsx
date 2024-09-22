@@ -1,10 +1,11 @@
+import Footer from "@/components/sections/Footer";
 import Navbar from "@/components/shared/Navbar";
 import { ThemeProvider } from "@/components/themes/ThemeProvider";
 import type { Metadata } from "next";
-import { Bai_Jamjuree } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const BaiJamjuree = Bai_Jamjuree({
+const BaiJamjuree = Inter({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
 });
@@ -29,7 +30,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main>{children}</main>
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
