@@ -38,7 +38,7 @@ const Navbar = () => {
 
           {/* Action button and theme switcher */}
           <div className="flex justify-center items-center gap-x-4">
-            <Button>Contact</Button>
+            <Button>Download resume</Button>
             <ModeToggle />
           </div>
         </nav>

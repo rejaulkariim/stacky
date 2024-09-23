@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className="relative tracking-tight text-balance font-bold !leading-tight text-foreground text-4xl md:text-5xl lg:text-6xl">
             Transforming idea into
             <br />
-            <span className="text-indigo-600">Seamless User Experiences</span>
+            <span className="text-indigo-600">seamless user experiences</span>
           </h1>
 
           {/* you can add your subtitle or description here */}
