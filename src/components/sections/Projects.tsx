@@ -13,13 +13,13 @@ const Projects = () => {
           description="Explore my latest projects, showcasing expertise in React.js, Next.js, and Tailwind CSS"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((item) => (
             <div
               key={item.title}
               className="hover:shadow-lg bg-accent/20 rounded-2xl p-2.5 border"
             >
-              <div className="w-full h-52 overflow-hidden rounded-xl relative group cursor-pointer">
+              <div className="w-full h-56 overflow-hidden rounded-xl relative group cursor-pointer">
                 <Image
                   src={item.image}
                   height={500}

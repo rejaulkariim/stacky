@@ -1,18 +1,19 @@
 import { approach } from "@/constants";
 import Image from "next/image";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
+import SectionHeader from "../shared/SectionHeader";
 
 const Approach = () => {
   return (
-    <section className="py-10 md:py-20 lg:py-28">
+    <section className="py-10 md:py-20">
       <MaxWidthWrapper>
-        <div className="text-center">
-          <h2 className="text-xl md:text-4xl lg:text-5xl font-bold">
-            My <span className="text-indigo-600">approach</span>
-          </h2>
-        </div>
+        <SectionHeader
+          title="My"
+          span="approach"
+          description="Here is my approch"
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {approach.map((item) => (
             <div
               key={item.title}

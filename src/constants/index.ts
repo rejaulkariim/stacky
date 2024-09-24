@@ -80,3 +80,41 @@ export const projects = [
     image: "/assets/images/project.png",
   },
 ];
+
+export const userTestimonails = [
+  {
+    user: "John",
+    comment: "Incredible service! The entire deployment process was seamless.",
+    image: "/assets/users/user.png",
+  },
+  {
+    user: "Chris",
+    comment:
+      "Next.js transformed our business. From idea to execution in record time!",
+    image: "/assets/users/user.png",
+  },
+  {
+    user: "James",
+    comment:
+      "Building scalable apps has never been easier. A true game changer!",
+    image: "/assets/users/user.png",
+  },
+  {
+    user: "Mark",
+    comment:
+      "Lightning-fast performance and intuitive design. Amazing experience!",
+    image: "/assets/users/user.png",
+  },
+  {
+    user: "Paul",
+    comment:
+      "A seamless experience from start to finish. Next.js is unmatched!",
+    image: "/assets/users/user.png",
+  },
+  {
+    user: "Daniel",
+    comment:
+      "Effortless scaling and deployment. Truly the best development solution.",
+    image: "/assets/users/user.png",
+  },
+];
