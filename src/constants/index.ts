@@ -1,8 +1,8 @@
 export const navItems = [
   {
     id: "1",
-    name: "About",
-    route: "/aboaut",
+    name: "Work",
+    route: "/#work",
   },
   {
     id: "2",
@@ -11,13 +11,13 @@ export const navItems = [
   },
   {
     id: "3",
-    name: "Work",
-    route: "/#work",
+    name: "About",
+    route: "/#aboaut",
   },
   {
     id: "4",
-    name: "Contact",
-    route: "/#contact",
+    name: "Testimonails",
+    route: "/#testimonails",
   },
 ];
 
@@ -116,5 +116,48 @@ export const userTestimonails = [
     comment:
       "Effortless scaling and deployment. Truly the best development solution.",
     image: "/assets/users/user.png",
+  },
+];
+
+export const experience = [
+  {
+    id: "1",
+    jobTitle: "Frontend Developer",
+    company: "Tech Innovations Inc.",
+    location: "New York, NY",
+    duration: "Jan 2021 - Present",
+    description:
+      "Developed responsive web applications using Next.js and React, improving user engagement by 30%.",
+    image: "/assets/images/project.png",
+  },
+  {
+    id: "2",
+    jobTitle: "Web Developer",
+    company: "Creative Solutions Ltd.",
+    location: "San Francisco, CA",
+    duration: "Jun 2019 - Dec 2020",
+    description:
+      "Collaborated with cross-functional teams to design and implement user-friendly websites, enhancing overall client satisfaction.",
+    image: "/assets/images/project.png",
+  },
+  {
+    id: "3",
+    jobTitle: "Software Engineer Intern",
+    company: "Global Tech Co.",
+    location: "Remote",
+    duration: "Jan 2019 - May 2019",
+    description:
+      "Assisted in developing internal tools and applications, gaining hands-on experience in software development lifecycle.",
+    image: "/assets/images/project.png",
+  },
+  {
+    id: "4",
+    jobTitle: "Junior Developer",
+    company: "Startup Hub",
+    location: "Austin, TX",
+    duration: "Jul 2018 - Dec 2018",
+    description:
+      "Contributed to the development of web applications using JavaScript and Node.js, streamlining project workflows.",
+    image: "/assets/images/project.png",
   },
 ];

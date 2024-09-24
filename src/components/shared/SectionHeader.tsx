@@ -10,7 +10,7 @@ const SectionHeader = ({ title, span, description }: TheaderProps) => {
       <h2 className="text-4xl md:text-5xl font-bold">
         {title} <span className="text-indigo-600">{span}</span>
       </h2>
-      <p className="text-muted-foreground max-w-prose mx-auto">{description}</p>
+      <p className="text-foreground max-w-prose mx-auto">{description}</p>
     </div>
   );
 };

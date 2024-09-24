@@ -31,7 +31,7 @@ const Projects = () => {
 
               <div className="mt-4 space-y-2 pb-4">
                 <h3 className="text-xl font-bold">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <p className="text-foreground">{item.description}</p>
               </div>
             </div>
           ))}

@@ -7,7 +7,7 @@ import { Separator } from "../ui/separator";
 
 const Testimonials = () => {
   return (
-    <section className="py-10 md:py-20">
+    <section id="testimonails" className="py-10 md:py-20">
       <MaxWidthWrapper>
         <SectionHeader
           title="What customers are"
@@ -19,7 +19,7 @@ const Testimonials = () => {
           {userTestimonails.map((review) => (
             <div key={review.user}>
               <div className="bg-card border rounded-md p-6 relative">
-                <p className="text-muted-foreground text-sm md:text-base">
+                <p className="text-foreground text-sm md:text-base">
                   {review.comment}
                 </p>
                 <Separator className="mt-4" />
@@ -34,10 +34,8 @@ const Testimonials = () => {
                       className="size-10 rounded-full border object-contain"
                     />
 
-                    <div className="mb-0.5">
-                      <h4 className="text-lg text-muted-foreground">
-                        {review.user}
-                      </h4>
+                    <div className="space-y-1">
+                      <h4 className="text-lg text-foreground">{review.user}</h4>
                       <div className="flex items-center gap-2">
                         <Star className="fill-amber-500 text-amber-500 size-4" />
                         <Star className="fill-amber-500 text-amber-500 size-4" />
