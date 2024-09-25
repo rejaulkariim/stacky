@@ -36,7 +36,7 @@ const Testimonials = () => {
 
                     <div className="space-y-1">
                       <h4 className="text-lg text-foreground">{review.user}</h4>
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-x-0.5">
                         <Star className="fill-amber-500 text-amber-500 size-4" />
                         <Star className="fill-amber-500 text-amber-500 size-4" />
                         <Star className="fill-amber-500 text-amber-500 size-4" />
