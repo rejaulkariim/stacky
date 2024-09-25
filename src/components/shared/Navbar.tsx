@@ -4,10 +4,11 @@ import Link from "next/link";
 import { ModeToggle } from "../themes/ModeToggle";
 import { Button, buttonVariants } from "../ui/button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <header className="hidden w-full bg-background border-b border-border/60 h-16 md:flex justify-center items-center sticky z-50 top-0 inset-x-0">
+    <header className="w-full bg-background border-b border-border/60 h-16 flex justify-center items-center sticky z-50 top-0 inset-x-0">
       <MaxWidthWrapper>
         <nav className="flex justify-between items-center">
           {/* Logo */}
@@ -20,7 +21,7 @@ const Navbar = () => {
           </div>
 
           {/* Nav items */}
-          <div className="flex justify-between items-center gap-x-8">
+          <div className="hidden lg:flex justify-between items-center gap-x-6">
             {navItems.map((item) => (
               <Link
                 href={item.route}
@@ -37,10 +38,12 @@ const Navbar = () => {
           </div>
 
           {/* Action button and theme switcher */}
-          <div className="flex justify-center items-center gap-x-4">
-            <Button>Download resume</Button>
+          <div className="hidden lg:flex justify-center items-center gap-x-2">
+            <Button>Resume</Button>
             <ModeToggle />
           </div>
+
+          <MobileNav />
         </nav>
       </MaxWidthWrapper>
     </header>
