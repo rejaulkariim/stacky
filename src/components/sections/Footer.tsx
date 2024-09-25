@@ -18,7 +18,7 @@ const Footer = () => {
             <h2 className="relative tracking-tight text-balance font-bold !leading-tight text-foreground text-3xl md:text-4xl lg:text-5xl">
               Transform Your Ideas into Reality!
             </h2>
-            <p className="max-w-xl mx-auto text-muted-foreground">
+            <p className="max-w-xl mx-auto text-foreground">
               Explore my portfolio to see how I can help bring your web
               development ideas to life with stunning, functional designs.
             </p>
@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-y-4 md:flex-row md:justify-between items-center mt-20">
           <div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-foreground">
               &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
           </div>

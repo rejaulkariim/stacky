@@ -20,7 +20,7 @@ const Navbar = () => {
           </div>
 
           {/* Nav items */}
-          <div className="flex justify-between items-center gap-x-10">
+          <div className="flex justify-between items-center gap-x-8">
             {navItems.map((item) => (
               <Link
                 href={item.route}

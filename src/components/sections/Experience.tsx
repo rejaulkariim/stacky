@@ -12,15 +12,15 @@ const Experience = () => {
           description="Explore my professional journey and see how I’ve contributed to various projects through innovative development and teamwork."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experience.map((exp) => (
             <div
               key={exp.id}
-              className="border rounded-lg hover:bg-accent/40 transition-color duration-300 p-4"
+              className="border rounded-2xl hover:bg-accent/40 transition-color duration-300 p-6"
             >
               <div className="flex flex-col">
                 <div className="space-y-2">
-                  <h1 className="font-bold text-2xl text-foreground">
+                  <h1 className="font-bold text-xl text-foreground">
                     {exp.jobTitle}
                   </h1>
                   <h2 className="text-foreground">

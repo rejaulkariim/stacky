@@ -12,7 +12,7 @@ const Testimonials = () => {
         <SectionHeader
           title="What customers are"
           span="saying"
-          description="See how our solutions empower businesses with seamless development and scalability."
+          description="Discover how our innovative solutions empower businesses by providing seamless development and scalability."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

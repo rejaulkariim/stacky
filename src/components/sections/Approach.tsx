@@ -5,19 +5,19 @@ import SectionHeader from "../shared/SectionHeader";
 
 const Approach = () => {
   return (
-    <section className="py-10 md:py-20">
+    <section id="myapproach" className="py-10 md:py-20">
       <MaxWidthWrapper>
         <SectionHeader
           title="My"
           span="approach"
-          description="Here is my approch"
+          description="I deliver tailored solutions that prioritize user experience and performance, ensuring each project is efficient, scalable, and aligned with client goals."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {approach.map((item) => (
             <div
               key={item.title}
-              className="border p-6 rounded-md hover:bg-accent/20 transition-colors duration-500 group"
+              className="border p-6 rounded-2xl hover:bg-accent/20 transition-colors duration-500 group"
             >
               <div>
                 <Image

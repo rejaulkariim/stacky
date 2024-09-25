@@ -12,10 +12,15 @@ export const navItems = [
   {
     id: "3",
     name: "About",
-    route: "/#aboaut",
+    route: "/#about",
   },
   {
     id: "4",
+    name: "My Approach",
+    route: "/#myapproach",
+  },
+  {
+    id: "5",
     name: "Testimonails",
     route: "/#testimonails",
   },
