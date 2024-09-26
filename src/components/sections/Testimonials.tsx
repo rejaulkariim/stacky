@@ -18,7 +18,7 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {userTestimonails.map((review) => (
             <div key={review.user}>
-              <div className="bg-card border rounded-md p-6 relative">
+              <div className="bg-card border rounded-2xl p-6 relative">
                 <p className="text-foreground text-sm md:text-base">
                   {review.comment}
                 </p>
